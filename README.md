@@ -1,5 +1,5 @@
 # Lecture_Evaluation
-3주에 걸쳐 혼자 제작하게된 강의평가의 README 파일입니다.
+3주에 걸쳐 제작하게 된 강의평가의 README 파일입니다.
 
 <img width="700" src="https://user-images.githubusercontent.com/62650222/79684774-ed736e80-826e-11ea-9989-34d451ec8759.PNG">
 
