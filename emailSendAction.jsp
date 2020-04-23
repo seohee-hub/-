@@ -37,7 +37,7 @@
       script.println("</script>");
       script.close();
       return;
-   } 
+   } 	// 사용자에게 보낼 메시지
 	String host= "http://localhost:8080/Lecture_Evaluation/";
 	String from= "vhsxm104@gmail.com";
 	String to= userDAO.getUserEmail(userID);
@@ -45,6 +45,7 @@
 	String content= "다음 링크에 접속하여 이메일 인증을 진행하세요!" +
 	"<br><a href='" + host + "emailCheckAction.jsp?code=" + new SHA256().getSHA256(to) + "'>이 링크를 누르시면 인증이 완료됩니다!</a>";
 	
+	// SMTP에 접속하기 위한 정보
 	Properties p= new Properties();
 	p.put("mail.smtp.user",from);
 	p.put("mail.smtp.host", "smtp.googlemail.com");
