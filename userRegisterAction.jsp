@@ -6,7 +6,11 @@
 <%@ page import="java.io.PrintWriter" %> 
 
 <%
+	//회원가입-> 사용자 정보를 데이터베이스에 등록-> 사용자의 이메일로 이메일을 전송하고 인증
+	
 	request.setCharacterEncoding("UTF-8");
+	
+	//로그인을 했을 때와 로그인을 하지 않았을 때를 세션으로 구분
 	String userID= null;
 	if (session.getAttribute("userID") != null) {
 		userID= (String) session.getAttribute("userID");
