@@ -29,6 +29,7 @@
       return;
 	}
 	
+	//사용자가 신고서를 작성하면, 관리자의 메일로 그 신고 내용을 받습니다.
 	request.setCharacterEncoding("UTF-8");
 	String reportTitle= null;
 	String reportContent= null;
@@ -48,7 +49,7 @@
 	    script.close();
 	    return;
 	}
-	
+	// 사용자에게 보낼 메시지를 기입합니다.
 	String host= "http://localhost:8080/Lecture_Evaluation/";
 	String from= "vhsxm104@gmail.com";
 	String to= "vhsxm104@naver.com";
@@ -57,6 +58,7 @@
 					"<br>제목: " + reportTitle + "<br>" +
 					"<br>내용: " + reportContent;
 	
+	// SMTP에 접속하기 위한 정보를 기입합니다
 	Properties p= new Properties();
 	p.put("mail.smtp.user",from);
 	p.put("mail.smtp.host", "smtp.googlemail.com");
