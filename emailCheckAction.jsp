@@ -36,6 +36,7 @@
 	    script.println("</script>");
 	    script.close();
 	    return;
+	    //데이터베이스에서 사용자 정보를 확인하면 'userEmailChecked' 속성의 값이 1(True)로 바뀜
 	} else {
 	   PrintWriter script= response.getWriter();
 	   script.println("<script>");
